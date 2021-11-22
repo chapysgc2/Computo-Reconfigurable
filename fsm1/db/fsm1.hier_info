@@ -1,0 +1,19 @@
+|fsm1
+clk => state~1.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+taken => Selector1.IN3
+taken => Selector2.IN3
+taken => Selector3.IN3
+taken => Selector4.IN1
+taken => Selector3.IN1
+taken => Selector2.IN1
+taken => Selector1.IN1
+taken => Selector0.IN1
+back => predicttaken.IN0
+predicttaken << predicttaken.DB_MAX_OUTPUT_PORT_TYPE
+
+

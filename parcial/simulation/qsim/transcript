@@ -1,0 +1,32 @@
+# do parcial.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:25:33 on Jun 21,2021
+# vlog -work work parcial.vo 
+# -- Compiling module parcial
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	parcial
+# End time: 14:25:33 on Jun 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:25:33 on Jun 21,2021
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module parcial_vlg_vec_tst
+# 
+# Top level modules:
+# 	parcial_vlg_vec_tst
+# End time: 14:25:33 on Jun 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.parcial_vlg_vec_tst 
+# Start time: 14:25:33 on Jun 21,2021
+# Loading work.parcial_vlg_vec_tst
+# Loading work.parcial
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# after#24
+# ** Note: $finish    : Waveform.vwf.vt(53)
+#    Time: 1 us  Iteration: 0  Instance: /parcial_vlg_vec_tst
+# End time: 14:25:34 on Jun 21,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

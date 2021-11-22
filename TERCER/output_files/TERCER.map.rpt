@@ -1,0 +1,568 @@
+Analysis & Synthesis report for TERCER
+Tue Jun 22 16:11:51 2021
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: regn:reg_0
+ 11. Parameter Settings for User Entity Instance: regn:reg_1
+ 12. Parameter Settings for User Entity Instance: regn:reg_2
+ 13. Parameter Settings for User Entity Instance: regn:reg_3
+ 14. Parameter Settings for User Entity Instance: regn:reg_4
+ 15. Parameter Settings for User Entity Instance: regn:reg_5
+ 16. Parameter Settings for User Entity Instance: regn:reg_6
+ 17. Parameter Settings for User Entity Instance: regn:reg_7
+ 18. Parameter Settings for User Entity Instance: regn:reg_IR
+ 19. Parameter Settings for User Entity Instance: regn:reg_A
+ 20. Parameter Settings for User Entity Instance: regn:reg_G
+ 21. Parameter Settings for Inferred Entity Instance: addsub:sum|lpm_add_sub:Add0
+ 22. Port Connectivity Checks: "addsub:sum"
+ 23. Port Connectivity Checks: "regn:reg_IR"
+ 24. Port Connectivity Checks: "regn:reg_5"
+ 25. Port Connectivity Checks: "dec3to8:decy"
+ 26. Port Connectivity Checks: "dec3to8:decx"
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jun 22 16:11:51 2021       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; TERCER                                      ;
+; Top-level Entity Name              ; TERCER                                      ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 302                                         ;
+;     Total combinational functions  ; 181                                         ;
+;     Dedicated logic registers      ; 156                                         ;
+; Total registers                    ; 156                                         ;
+; Total pins                         ; 36                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; TERCER             ; TERCER             ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; ../upcount/upcount.sv            ; yes             ; User SystemVerilog HDL File  ; X:/proyectos/upcount/upcount.sv                                                ;         ;
+; ../regn/regn.sv                  ; yes             ; User SystemVerilog HDL File  ; X:/proyectos/regn/regn.sv                                                      ;         ;
+; ../dec3to8/dec3to8.sv            ; yes             ; User SystemVerilog HDL File  ; X:/proyectos/dec3to8/dec3to8.sv                                                ;         ;
+; ../addsub/addsub.sv              ; yes             ; User SystemVerilog HDL File  ; X:/proyectos/addsub/addsub.sv                                                  ;         ;
+; TERCER.sv                        ; yes             ; User SystemVerilog HDL File  ; X:/proyectos/TERCER/TERCER.sv                                                  ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                 ; x:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                 ; x:/intelfpga_lite/20.1/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                 ; x:/intelfpga_lite/20.1/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; x:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; x:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                 ; x:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; x:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc          ;         ;
+; db/add_sub_rvi.tdf               ; yes             ; Auto-Generated Megafunction  ; X:/proyectos/TERCER/db/add_sub_rvi.tdf                                         ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 302        ;
+;                                             ;            ;
+; Total combinational functions               ; 181        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 133        ;
+;     -- 3 input functions                    ; 36         ;
+;     -- <=2 input functions                  ; 12         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 165        ;
+;     -- arithmetic mode                      ; 16         ;
+;                                             ;            ;
+; Total registers                             ; 156        ;
+;     -- Dedicated logic registers            ; 156        ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 36         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; lock~input ;
+; Maximum fan-out                             ; 156        ;
+; Total fan-out                               ; 1182       ;
+; Average fan-out                             ; 2.89       ;
++---------------------------------------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                            ;
++---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+; |TERCER                               ; 181 (159)           ; 156 (0)                   ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |TERCER                                                        ; TERCER      ; work         ;
+;    |addsub:sum|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|addsub:sum                                             ; addsub      ; work         ;
+;       |lpm_add_sub:Add0|              ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|addsub:sum|lpm_add_sub:Add0                            ; lpm_add_sub ; work         ;
+;          |add_sub_rvi:auto_generated| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|addsub:sum|lpm_add_sub:Add0|add_sub_rvi:auto_generated ; add_sub_rvi ; work         ;
+;    |regn:reg_0|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_0                                             ; regn        ; work         ;
+;    |regn:reg_1|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_1                                             ; regn        ; work         ;
+;    |regn:reg_2|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_2                                             ; regn        ; work         ;
+;    |regn:reg_3|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_3                                             ; regn        ; work         ;
+;    |regn:reg_4|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_4                                             ; regn        ; work         ;
+;    |regn:reg_5|                       ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_5                                             ; regn        ; work         ;
+;    |regn:reg_6|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_6                                             ; regn        ; work         ;
+;    |regn:reg_7|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_7                                             ; regn        ; work         ;
+;    |regn:reg_A|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_A                                             ; regn        ; work         ;
+;    |regn:reg_G|                       ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_G                                             ; regn        ; work         ;
+;    |regn:reg_IR|                      ; 0 (0)               ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|regn:reg_IR                                            ; regn        ; work         ;
+;    |upcount:Tstep|                    ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TERCER|upcount:Tstep                                          ; upcount     ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 156   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 153   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |TERCER|Mux12              ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 16 LEs               ; 48 LEs                 ; No         ; |TERCER|Mux17              ;
+; 10:1               ; 15 bits   ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; No         ; |TERCER|Selector1          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_0 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_1 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_2 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_3 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_4 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_5 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_6 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_7 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_IR ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; n              ; 9     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_A ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regn:reg_G ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; n              ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: addsub:sum|lpm_add_sub:Add0 ;
++------------------------+--------------+--------------------------------------+
+; Parameter Name         ; Value        ; Type                                 ;
++------------------------+--------------+--------------------------------------+
+; LPM_WIDTH              ; 16           ; Untyped                              ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                              ;
+; LPM_DIRECTION          ; DEFAULT      ; Untyped                              ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                              ;
+; LPM_PIPELINE           ; 0            ; Untyped                              ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                              ;
+; REGISTERED_AT_END      ; 0            ; Untyped                              ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                              ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                              ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                              ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                   ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                              ;
+; USE_WYS                ; OFF          ; Untyped                              ;
+; STYLE                  ; FAST         ; Untyped                              ;
+; CBXI_PARAMETER         ; add_sub_rvi  ; Untyped                              ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                       ;
++------------------------+--------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "addsub:sum"                                                                                                                                                                          ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; A       ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "A[15..1]" will be connected to GND.                                        ;
+; add_sub ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (1 bits) it drives.  The 15 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "regn:reg_IR"                                                                                                                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Rin  ; Input ; Warning  ; Input port expression (8 bits) is wider than the input port (1 bits) it drives.  The 7 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "regn:reg_5"                                                                                                            ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; Q    ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "Q[15..1]" have no fanouts ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "dec3to8:decy" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; En   ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "dec3to8:decx" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; En   ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 36                          ;
+; cycloneiii_ff         ; 156                         ;
+;     ENA               ; 153                         ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 181                         ;
+;     arith             ; 16                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 15                          ;
+;     normal            ; 165                         ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 133                         ;
+;                       ;                             ;
+; Max LUT depth         ; 12.50                       ;
+; Average LUT depth     ; 6.80                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Tue Jun 22 16:11:42 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TERCER -c TERCER
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /proyectos/upcount/upcount.sv
+    Info (12023): Found entity 1: upcount File: X:/proyectos/upcount/upcount.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /proyectos/regn/regn.sv
+    Info (12023): Found entity 1: regn File: X:/proyectos/regn/regn.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /proyectos/dec3to8/dec3to8.sv
+    Info (12023): Found entity 1: dec3to8 File: X:/proyectos/dec3to8/dec3to8.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /proyectos/addsub/addsub.sv
+    Info (12023): Found entity 1: addsub File: X:/proyectos/addsub/addsub.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tercer.sv
+    Info (12023): Found entity 1: TERCER File: X:/proyectos/TERCER/TERCER.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at TERCER.sv(187): created implicit net for "R5" File: X:/proyectos/TERCER/TERCER.sv Line: 187
+Info (12127): Elaborating entity "TERCER" for the top level hierarchy
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(214): variable "DIN" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 214
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(215): variable "G" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 215
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(216): variable "R0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 216
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(217): variable "R1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 217
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(218): variable "R2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 218
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(219): variable "R3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 219
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(220): variable "R4" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 220
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(221): variable "R5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 221
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(222): variable "R6" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 222
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(223): variable "R7" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 223
+Warning (10235): Verilog HDL Always Construct warning at TERCER.sv(224): variable "DIN" is read inside the Always Construct but isn't in the Always Construct's Event Control File: X:/proyectos/TERCER/TERCER.sv Line: 224
+Info (10264): Verilog HDL Case Statement information at TERCER.sv(212): all case item expressions in this case statement are onehot File: X:/proyectos/TERCER/TERCER.sv Line: 212
+Info (12128): Elaborating entity "upcount" for hierarchy "upcount:Tstep" File: X:/proyectos/TERCER/TERCER.sv Line: 33
+Info (12128): Elaborating entity "dec3to8" for hierarchy "dec3to8:decx" File: X:/proyectos/TERCER/TERCER.sv Line: 37
+Info (12128): Elaborating entity "regn" for hierarchy "regn:reg_0" File: X:/proyectos/TERCER/TERCER.sv Line: 178
+Info (12128): Elaborating entity "regn" for hierarchy "regn:reg_IR" File: X:/proyectos/TERCER/TERCER.sv Line: 193
+Info (12128): Elaborating entity "addsub" for hierarchy "addsub:sum" File: X:/proyectos/TERCER/TERCER.sv Line: 200
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278002): Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "addsub:sum|Add0" File: X:/proyectos/addsub/addsub.sv Line: 9
+Info (12130): Elaborated megafunction instantiation "addsub:sum|lpm_add_sub:Add0" File: X:/proyectos/addsub/addsub.sv Line: 9
+Info (12133): Instantiated megafunction "addsub:sum|lpm_add_sub:Add0" with the following parameter: File: X:/proyectos/addsub/addsub.sv Line: 9
+    Info (12134): Parameter "LPM_WIDTH" = "16"
+    Info (12134): Parameter "LPM_DIRECTION" = "DEFAULT"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_rvi.tdf
+    Info (12023): Found entity 1: add_sub_rvi File: X:/proyectos/TERCER/db/add_sub_rvi.tdf Line: 23
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Run" File: X:/proyectos/TERCER/TERCER.sv Line: 6
+Info (21057): Implemented 354 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 318 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Tue Jun 22 16:11:51 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
+
+

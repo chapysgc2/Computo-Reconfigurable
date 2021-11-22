@@ -1,0 +1,139 @@
+|multiplicacion
+a[0] => P.IN0
+a[0] => b0.IN0
+a[0] => b2.IN0
+a[0] => b5.IN0
+a[1] => a0.IN0
+a[1] => b1.IN0
+a[1] => b4.IN0
+a[1] => b8.IN0
+a[2] => a1.IN0
+a[2] => b3.IN0
+a[2] => b7.IN0
+a[2] => b10.IN0
+a[3] => a3.IN0
+a[3] => b6.IN0
+a[3] => b9.IN0
+a[3] => b11.IN0
+b[0] => P.IN1
+b[0] => a0.IN1
+b[0] => a1.IN1
+b[0] => a3.IN1
+b[1] => b0.IN1
+b[1] => b1.IN1
+b[1] => b3.IN1
+b[1] => b6.IN1
+b[2] => b2.IN1
+b[2] => b4.IN1
+b[2] => b7.IN1
+b[2] => b9.IN1
+b[3] => b5.IN1
+b[3] => b8.IN1
+b[3] => b10.IN1
+b[3] => b11.IN1
+P[0] <= P.DB_MAX_OUTPUT_PORT_TYPE
+P[1] <= fulladder:p0.port3
+P[2] <= fulladder:p2.port3
+P[3] <= fulladder:p5.port3
+P[4] <= fulladder:p8.port3
+P[5] <= fulladder:p10.port3
+P[6] <= fulladder:p11.port3
+P[7] <= fulladder:p11.port4
+
+
+|multiplicacion|fulladder:p0
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p1
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p2
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p3
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p4
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p5
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p6
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p7
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p8
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p9
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p10
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicacion|fulladder:p11
+a => Add0.IN1
+b => Add0.IN2
+ci => Add1.IN4
+y <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

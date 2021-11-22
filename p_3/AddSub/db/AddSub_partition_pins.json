@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "AddSubo[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[6]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[7]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[8]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[9]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[10]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[11]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[12]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[13]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[14]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSubo[15]",
+					"strict" : false
+				},
+				{
+					"name" : "AddSub",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BusWires[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Aout[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jun 22 16:11:59 2021
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : TERCER
+Top-level Entity Name : TERCER
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 217 / 6,272 ( 3 % )
+    Total combinational functions : 181 / 6,272 ( 3 % )
+    Dedicated logic registers : 156 / 6,272 ( 2 % )
+Total registers : 156
+Total pins : 36 / 92 ( 39 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

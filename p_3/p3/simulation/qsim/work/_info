@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Johnuwu/Documents/quartus/p_3/p3/simulation/qsim
+vhard_block
+Z0 !s110 1624395248
+!i10b 1
+!s100 @;M=JOV^RUfZM:dDL73D[3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ij8A[CCFfT`gFQl?^9zY@f1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dX:/proyectos/p_3/p3/simulation/qsim
+Z4 w1624395246
+Z5 8p3.vo
+Z6 Fp3.vo
+!i122 40
+L0 9919 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1624395247.000000
+Z9 !s107 p3.vo|
+Z10 !s90 -work|work|p3.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vp3
+R0
+!i10b 1
+!s100 W`aZYYhz61Kh_g:>KB4KR2
+R1
+I8[lT[c0fYe@]nM`Gi=gOi0
+R2
+R3
+R4
+R5
+R6
+!i122 40
+L0 32 9886
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vp3_vlg_vec_tst
+R0
+!i10b 1
+!s100 ACMhc2NSeM0OTV]^XSl9M0
+R1
+IRQFKN]^_cT7NfRHFMKhhe0
+R2
+R3
+w1624395245
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 41
+L0 30 161
+R7
+r1
+!s85 0
+31
+!s108 1624395248.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12

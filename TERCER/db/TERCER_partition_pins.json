@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Done",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Buswires[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Resetn",
+					"strict" : false
+				},
+				{
+					"name" : "lock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,18 @@
+module sevens eg (input logic [3:0] data, output logic [6:0] segments);
+
+always_comb
+
+case (data)
+
+ segments = 7'b111_1110; 1: segments = 7'b011 0000;
+ segments = 7'b110 1101; 3: segments 7'b111 1001;
+ segments = 7'b011 0011;
+ segments = 7'b101 1011 6: segments 7'b101 1111
+ segments = 7'b111 0000;
+ segments = 7'b111 1111; 9: segments = 7'b111 1011:
+
+default: segments = 7'b100 1111;
+
+endcase
+
+endmodule
